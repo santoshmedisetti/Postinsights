@@ -1,0 +1,157 @@
+/* ===== Global Layout ===== */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f9f9f9, #e0eeff);
+  padding: 40px;
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  gap: 30px;
+}
+
+/* ===== Form Box ===== */
+.form-box {
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 650px;
+  max-width: 95%;
+  transition: transform 0.2s ease;
+}
+
+.form-box:hover {
+  transform: translateY(-2px);
+}
+
+.form-title {
+  text-align: center;
+  color: #1f3c88;
+  margin-bottom: 25px;
+}
+
+.label {
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  resize: none;
+  margin-bottom: 25px;
+  font-size: 14px;
+  transition: border 0.2s ease;
+}
+
+.textarea:focus {
+  border-color: #0078ff;
+  outline: none;
+  box-shadow: 0 0 6px rgba(0, 120, 255, 0.3);
+}
+
+.checkbox-group {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 25px;
+}
+
+.checkbox-item {
+  font-weight: 500;
+  cursor: pointer;
+  color: #333;
+}
+
+/* ===== Buttons ===== */
+.button-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.primary-btn {
+  background-color: #0078ff;
+  color: white;
+}
+
+.primary-btn:hover {
+  background-color: #005fcc;
+}
+
+.secondary-btn {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.secondary-btn:hover {
+  background-color: #e0e0e0;
+}
+
+/* ===== Output Section ===== */
+.output-box {
+  background: #ffffff;
+  width: 650px;
+  max-width: 95%;
+  padding: 25px 35px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.2s ease;
+}
+
+.output-title {
+  color: #1f3c88;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.output-content {
+  background-color: #f7faff;
+  border: 1px solid #d8e4ff;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #2c2c2c;
+  white-space: pre-wrap;
+}
+
+.placeholder-text {
+  text-align: center;
+  color: #888;
+  font-style: italic;
+}
+
+.loading-text {
+  text-align: center;
+  color: #0078ff;
+  font-weight: 500;
+  animation: pulse 1.5s infinite;
+}
+
+/* Subtle pulsing animation for loading text */
+@keyframes pulse {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
